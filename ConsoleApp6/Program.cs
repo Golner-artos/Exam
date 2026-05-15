@@ -55,9 +55,12 @@ namespace ConsoleApp6
 
                 switch (Console.ReadLine())
                 {
-                    case "1": Login(); break;
-                    case "2": Register(); break;
-                    case "3": return;
+                    case "1": Login(); 
+                        break;
+                    case "2": Register();
+                        break;
+                    case "3": 
+                        return;
                 }
             }
         }
@@ -96,8 +99,7 @@ namespace ConsoleApp6
             Console.Write("Password: ");
             string pass = Console.ReadLine();
 
-            currentUser = users.FirstOrDefault(
-                x => x.Login == login && x.Password == pass);
+            currentUser = users.FirstOrDefault( x => x.Login == login && x.Password == pass);
 
             if (currentUser == null)
             {
@@ -119,9 +121,12 @@ namespace ConsoleApp6
 
                 switch (Console.ReadLine())
                 {
-                    case "1": StartQuiz(); break;
-                    case "2": ShowResults(); break;
-                    case "3": return;
+                    case "1": StartQuiz();
+                        break;
+                    case "2": ShowResults(); 
+                        break;
+                    case "3": 
+                        return;
                 }
             }
         }
